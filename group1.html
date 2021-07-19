@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 </head>
 <body>
+
+
+
   <div class="contener">
     <header>
-      <img src="image/bg-contact(1).jpg" alt="" class="header-img">
+      <ul class="slick01">
+      <li><img src="image/bg-contact(1).jpg" alt="" class="header-img"></li>
+      <li><img src="image/bg-contact(2).jpg" alt="" class="header-img"></li>
+      <li><img src="image/bg-contact(3).jpg" alt="" class="header-img"></li>
+    </ul>
     </header>
-    <h2 class="contact-form">Contact Form</h2>
-    <table class="contact-table">
-      <tr>
-        <th>名前</th>
-        <td><input type="text"></td>
-      </tr>
-      <tr>
-        <th>連絡先</th>
-        <td><input type="text"></td>
-      </tr>
-      <tr>
-        <th>お問い合わせ内容</th>
-        <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
-      </tr>
 
-    </table>
-    <input class ="submit" type="submit" value="送信">
-    <footer><p>.C yukistadio</p></footer>
+    <h2 class="contact-form">Contact Form</h2>
+
+
+  <div class="contact">
+    <section>
+
+      <div class="form">
+        <form>
+
+          <dl>
+            <dt><span class="required">お名前</span></dt>
+            <dd><input type="text" name="name" class="name" required></dd>
+
+            <dt><span class="required">メールアドレス</span></dt>
+            <dd><input type="email" name="email" class="email" required></dd>
+
+            <dt>電話番号</dt>
+            <dd><input type="tel" name="tel" class="tel"></dd>
+
+            <dt>お問い合わせ種別</dt>
+            <dd>
+              <select name="type" class="type">
+                <option value="メディア出演">メディア出演</option>
+                <option value="撮影のご依頼">撮影のご依頼</option>
+                <option value="その他">その他お問い合わせ</option>
+              </select>
+            </dd>
+
+            <dt>ご希望のご連絡方法</dt>
+            <dd>
+              <input type="radio" name="contact" value="Eメール">Eメール
+              <input type="radio" name="contact" value="お電話">お電話
+            </dd>
+
+            <dt>メッセージ</dt>
+            <dd><textarea name="message" class="message"></textarea></dd>
+          </dl>
+
+
+                <p>Date: <input type="text" id="datepicker"></p>
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                <script type="text/javascript" src="group1.js"></script>
+
+
+
+                <script type="text/javascript" src="image/slick.min.js"></script>
+
+
+          <button type="submit" class="btn">送信</button>
+        </form>
+    </section>
   </div>
+
+    <footer><p>.C yukistadio</p></footer>
+
 </body>
 </html>
